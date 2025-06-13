@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>LUCKY SIGNAL BOT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-bar">
+    <button id="sound-toggle">🔇</button>
+    <button id="balance-btn" onclick="editBalance()">💳 <span id="balance">45189.51 ₽</span></button>
+    <button id="help-btn">❓ Как играть</button>
+  </div>
+
+  <div class="grid" id="grid">
+    <!-- Генерация ячеек 5x5 -->
+  </div>
+
+  <div class="bottom-panel">
+    <div class="max-win">🌟 Макс. выигрыш <span id="max-win">35 144 ₽</span></div>
+    <div class="mines">
+      <button onclick="changeMines(-1)">←</button>
+      <span id="mines-count">3</span> ловушек
+      <button onclick="changeMines(1)">→</button>
+    </div>
+  </div>
+
+  <div class="bet-panel">
+    <button onclick="changeBet(-1)">−</button>
+    <span id="bet-amount">16 ₽</span>
+    <button onclick="changeBet(1)">+</button>
+  </div>
+
+  <button class="play-button" onclick="playGame()">Играть</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

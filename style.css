@@ -1,0 +1,37 @@
+
+body {
+  background-color: #0f0f1b;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+.top-bar, .bottom-panel, .bet-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 10px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin: 20px;
+}
+.grid button {
+  width: 60px;
+  height: 60px;
+  background-color: #1e90ff;
+  border: none;
+  border-radius: 8px;
+}
+.play-button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  background: linear-gradient(to right, #2b82f6, #32c9ff);
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
